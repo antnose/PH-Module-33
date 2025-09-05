@@ -95,59 +95,27 @@
     <!-- Hero Section End -->
 
     <!-- Level Section Start -->
-    <div class="mb-[500px]">
-      <p class="text-5xl text-center font-bold">Let's Learn Vocabularies</p>
-      <div class="flex justify-center gap-5 pt-10">
-        <button class="btn btn-outline btn-primary">
-          <span>
-            <img src="./assets/fa-book-open.png" alt="" />
-          </span>
-          Lesson-1
-        </button>
+    <div>
+      <p class="text-5xl text-center font-bold">
+        <span class="text-blue-400"> Let's</span> Learn Vocabularies
+      </p>
+      <div id="levelContainer" class="flex justify-center gap-5 pt-10"></div>
 
-        <button class="btn btn-outline btn-primary">
-          <span>
-            <img src="./assets/fa-book-open.png" alt="" />
-          </span>
-          Lesson-2
-        </button>
-
-        <button class="btn btn-outline btn-primary">
-          <span>
-            <img src="./assets/fa-book-open.png" alt="" />
-          </span>
-          Lesson-3
-        </button>
-
-        <button class="btn btn-outline btn-primary">
-          <span>
-            <img src="./assets/fa-book-open.png" alt="" />
-          </span>
-          Lesson-4
-        </button>
-        <button class="btn btn-outline btn-primary">
-          <span>
-            <img src="./assets/fa-book-open.png" alt="" />
-          </span>
-          Lesson-5
-        </button>
-
-        <button class="btn btn-outline btn-primary">
-          <span>
-            <img src="./assets/fa-book-open.png" alt="" />
-          </span>
-          Lesson-6
-        </button>
-
-        <button class="btn btn-outline btn-primary">
-          <span>
-            <img src="./assets/fa-book-open.png" alt="" />
-          </span>
-          Lesson-7
-        </button>
+      <!-- Search Section Start -->
+      <div class="join pt-7 w-full justify-center">
+        <div>
+          <label class="input validator join-item">
+            <input id="search" type="text" placeholder="Search Your Word" />
+          </label>
+          <div class="validator-hint hidden">Enter valid email address</div>
+        </div>
+        <button id="searchBtn" class="btn btn-neutral join-item">Search</button>
       </div>
+      <!-- Search Section End -->
+
       <!-- Lesson Selection Part -->
       <div
+        id="lessonSelect"
         class="flex items-center justify-center flex-col text-center mt-10 bg-gray-100 min-h-[204px]"
       >
         <p class="text-xl text-gray-500">আপনি এখনো কোন Lesson Select করেন</p>
@@ -155,5 +123,130 @@
       </div>
     </div>
     <!-- Level Section End -->
+
+    <!--  Card Section Start -->
+    <div
+      id="cardSection"
+      class="grid grid-cols-3 bg-gray-100 mx-14 p-4 rounded-2xl h-full gap-7 hidden mt-10"
+    ></div>
+    <!--  Card Section End -->
+
+    <!-- Frequently Asked Questions Section Start -->
+    <div class="px-14 mt-40 mb-30">
+      <p class="font-bold text-4xl text-center">
+        <span class="text-blue-400">Frequently</span> Asked Questions
+      </p>
+
+      <div class="grid gap-4 mt-10">
+        <div class="collapse collapse-plus bg-gray-100 border border-base-300">
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title font-semibold">
+            1. How can I start learning English on this website?
+          </div>
+          <div class="collapse-content text-sm">
+            You can start by exploring our beginner lessons, interactive
+            exercises, and quizzes. We also offer structured courses to guide
+            you step by step.
+          </div>
+        </div>
+
+        <div class="collapse collapse-plus bg-gray-100 border border-base-300">
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title font-semibold">
+            2. Is this website free to use?
+          </div>
+          <div class="collapse-content text-sm">
+            Click the "Sign Up" button in the top right corner and follow the
+            registration process.
+          </div>
+        </div>
+
+        <div class="collapse collapse-plus bg-gray-100 border border-base-300">
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title font-semibold">
+            3. Do I need to create an account?
+          </div>
+          <div class="collapse-content text-sm">
+            Click the "Sign Up" button in the top right corner and follow the
+            registration process.
+          </div>
+        </div>
+
+        <div class="collapse collapse-plus bg-gray-100 border border-base-300">
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title font-semibold">
+            4. How can I build my English vocabulary?
+          </div>
+          <div class="collapse-content text-sm">
+            Click the "Sign Up" button in the top right corner and follow the
+            registration process.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Frequently Asked Questions Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer sm:footer-horizontal bg-gray-50 p-14">
+      <aside>
+        <p>
+          <a class="btn text-xl border-none hover:bg-gray-50 cursor-default p-0"
+            >English
+            <img src="./assets/logo.png" alt="" />
+            <span class="banglaFont">জানালা</span>
+          </a>
+        </p>
+        <p class="banglaFont">ইংরেজি শিখুন সহজে</p>
+        <p>Providing ED-Tech Applications since 2025</p>
+      </aside>
+      <nav class="w-full justify-end">
+        <h6 class="footer-title">FOLLOW US</h6>
+
+        <div class="grid grid-flow-col gap-4">
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+              ></path>
+            </svg>
+          </a>
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+              ></path>
+            </svg>
+          </a>
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </footer>
+    <!-- Footer Section End -->
+
+    <script src="./script.js"></script>
   </body>
 </html>
